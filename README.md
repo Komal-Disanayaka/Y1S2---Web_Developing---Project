@@ -1,4 +1,4 @@
-# BookStore Management System
+# Online BookStore Management System
 
 A modern online bookstore management system built with Java EE technologies, providing a seamless experience for both customers and administrators.
 
