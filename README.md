@@ -28,7 +28,7 @@ A modern online bookstore management system built with Java EE technologies, pro
 - Java 17
 - Jakarta EE (Servlet, JSP, JSTL)
 - Maven for dependency management
-- Tomcat 7 for deployment
+- Tomcat 11 for deployment
 - Gson for JSON processing
 - HTML/CSS/JavaScript for frontend
 - Text file-based data storage
@@ -37,7 +37,7 @@ A modern online bookstore management system built with Java EE technologies, pro
 
 - JDK 17 or higher
 - Maven 3.6 or higher
-- Tomcat 7 or compatible servlet container
+- Tomcat 11 or compatible servlet container
 
 ## 🚀 Getting Started
 
