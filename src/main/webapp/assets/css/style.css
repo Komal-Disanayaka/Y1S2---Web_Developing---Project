@@ -1,0 +1,354 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container for consistent width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.navbar nav a:hover {
+    color: #3498db;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Collections Section */
+.collections-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.collections-section h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.collection-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px);
+}
+
+.collection-card i {
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.collection-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.collection-card p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+/* Books Grid Section */
+.books-grid-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.books-grid-section h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.book-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.book-card p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+.book-card .price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+/* Form Styles */
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="email"],
+.form-container select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.form-container p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: 600;
+}
+
+table td {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .collections-grid, .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
